@@ -4,7 +4,6 @@ import '@progress/kendo-theme-default/dist/all.css';
 import "./globals.css";
 // contexts
 import { CartProvider } from "../context/CartContext";
-import { SessionProvider } from "next-auth/react";
 
 
 
@@ -34,11 +33,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <SessionProvider> */}
           <CartProvider>
             {children}
           </CartProvider>
-        {/* </SessionProvider> */}
 
       </body>
     </html>

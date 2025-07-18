@@ -26,7 +26,7 @@ const NavigationDrawer = () => {
         if (items[e.itemIndex].route === 'signout') {
             signOut();
         } else {
-            router.push(items[e.itemIndex].route);
+            router.push(items[e.itemIndex].route ?? "/home");
         }
     };
 
